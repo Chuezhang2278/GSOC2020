@@ -1,4 +1,5 @@
 # Title 
+Repository size reduction
 
 ## Abstract 
 Matplotlib has an issue where its repository size increases too much everytime a new baseline image is added or modified. Rather than storing it in the repository, why not just store it inside the sdist/wheel so that baseline images are generated whenever sdist generates a new release of mpl.
