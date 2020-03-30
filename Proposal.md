@@ -22,15 +22,17 @@ Matplotlib has an issue where its repository size increases too much everytime a
 ### June 7th - July 14th 
 - Setup CI cache for when test suite is run on new environment 
 
-### July 15th - July 29th
+### July 15th - July 22nd
 - By now, sdists should now generate baseline images and should not be within the repository
 - caching should only be performed once for when the test suite is run for the first time
 
-### July 30th - August 12th
-- Hopefully fix the FreeType issue where everytime FreeStyle updates, baseline image size increases
-- Bug fixes 
+### July 23rd - June 30th
+- Understanding FreeType image rendering
 
-### August 13th - August 24th
+### August 1st - August 8th
+- Hopefully by now, a fix for FreeType will be implemented 
+
+### August 9th - August 24th
 - More bug fixes
 - Changing up the documentation on test suites
 
