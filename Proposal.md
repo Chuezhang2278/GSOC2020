@@ -9,7 +9,7 @@ Matplotlib has an issue where its repository size increases too much everytime a
 - Unit tests are strictly done with the latest release of mpl
 - To cache using CI cache so that CI time doesn't double
 - commit messages require special string when modifications or additional baseline images are made
-- Hopefully fix the issue with FreeStyle increasing baseline image sizes everytime there is an update 
+- Hopefully fix the issue with FreeType increasing baseline image sizes everytime there is an update 
 
 ## Schedules of Deliverables
 
@@ -27,7 +27,7 @@ Matplotlib has an issue where its repository size increases too much everytime a
 - caching should only be performed once for when the test suite is run for the first time
 
 ### July 30th - August 12th
-- Hopefully fix the FreeStyle issue where everytime FreeStyle updates, baseline image size increases
+- Hopefully fix the FreeType issue where everytime FreeStyle updates, baseline image size increases
 - Bug fixes 
 
 ### August 13th - August 24th
@@ -35,10 +35,10 @@ Matplotlib has an issue where its repository size increases too much everytime a
 - Changing up the documentation on test suites
 
 ## Development Experience
-- I have no experience in developing or contributing to open source projects
+- I have no experience in development or experience in contributing to open source projects
 
 ## Other Experiences
-- I have experience working as project leads for proejcts surrounding software development 
+- I have developed software for class proejects while acting as the project lead. A notable project developed was my stock market prediction software where matplotlib was actively used to display highs and lows of stocks. Matplotlib has also been used for displaying contents of trained data sets for my Machine Learning Course. 
 
 # Why this project
-- I have found myself working closely with people that revolve around matplotlib and i would like to get into matplotlib myself. I was referred to this GSOC to gain experience and im looking forward to learning the backend of matplotlib in hopes of becoming a contributer for mpl
+- I was a student of Hannah Aizenman in the past and currently work with her in the GLASSLAB at The City College of New York. Due to this connection, i was recommended to try out this project so that i could build more experience working with matplotlib and open source projects in general.
