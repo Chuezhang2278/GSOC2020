@@ -13,12 +13,18 @@ Matplotlib has an issue where its repository size increases too much everytime a
 
 ## Schedules of Deliverables
 
-### June 1st - June 15th
-- Undertanding sdists/wheels, Caching and how Baseline images are used for unit tests.
+### June 1st - June 8th
+- Undertanding sdists/wheels and how Baseline images are used for unit tests.
+
+### June 9th - 15th 
+- Understand how Caching works and where we will be caching into
 
 ### June 16th - July 7th
-- To conduct tests on sdists and transfering baseline images over to sdist and have them be generated on new release
-
+- To conduct tests on
+  - Cache
+  - Sdists 
+  - Baseline imaging 
+  
 ### June 7th - July 14th 
 - Setup CI cache for when test suite is run on new environment 
 
