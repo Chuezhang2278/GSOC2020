@@ -8,39 +8,34 @@ Matplotlib has an issue where its repository size increases too much everytime a
 - Transfer all baseline images from repo to sdist/wheel
 - Unit tests are strictly done with the latest release of mpl
 - To cache using CI cache so that CI time doesn't double
-- commit messages require special string when modifications or additional baseline images are made
-- Hopefully fix the issue with FreeType increasing baseline image sizes everytime there is an update 
+- Commit messages require special string when modifications or additional baseline images are made
+- Fix the issue with FreeType increasing baseline image sizes everytime there is an update ( due to rasterization )
 
 ## Schedules of Deliverables
 
 ### June 1st - June 8th
-- Undertanding sdists/wheels and how Baseline images are used for unit tests.
-
-### June 9th - 15th 
-- Understand how Caching works and where we will be caching into
-
-### June 16th - July 7th
-- To conduct tests on
-  - Cache
-  - Sdists 
-  - Baseline imaging 
+- To understand 
+  - Caching - Specifically on caching memory into specific areas 
+  - Sdists - Modifying source distributions code and how we generate MPL
+  - Baseline imaging and how we use FreeType to generate these images
   
-### June 7th - July 14th 
-- Setup CI cache for when test suite is run on new environment 
+### June 9th - June 22nd
+-  Will start by modifying our Sdist so that on every new release, we will generate the latest version of our baseline imaging. (This means that everyone will have to be updated with the latest version of MPL in order to use the test suite)
 
-### July 15th - July 22nd
+### June 23rd - June 30th
 - By now, sdists should now generate baseline images and should not be within the repository
-- caching should only be performed once for when the test suite is run for the first time
+- I will now start using gitlab CI for caching 
 
-### July 23rd - June 30th
-- Understanding FreeType image rendering
+### July 1st - July 14th
+- To deal with FreeType increasing the size of baseline images perhaps a solution would be delete all baseline images and have them regenerated as we use a new version of freetype (this may be highly unefficient so maintaining an older version of freetype may be better)
 
-### August 1st - August 8th
-- Hopefully by now, a fix for FreeType will be implemented 
+### July 15th - July 22nd 
+- We will publish mpl-test-data as a wheel seperately
+- If a baseline image needs to be changed, set up a special commit message that is required to modify the images
 
-### August 9th - August 24th
-- More bug fixes
-- Changing up the documentation on test suites
+### July 23rd - August 24th
+- Bug fixing
+- Update documentation regarding using our test suites
 
 ## Development Experience
 - I have no experience in development or experience in contributing to open source projects
